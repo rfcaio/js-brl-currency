@@ -1,0 +1,32 @@
+{
+  "name": "js-brl-currency",
+  "version": "0.0.0",
+  "description": "A simple BRL currency formatter.",
+  "author": {
+    "email": "rfcaio90@gmail.com",
+    "name": "Caio Rodrigues Fernandes",
+    "url": "https://github.com/rfcaio"
+  },
+  "devDependencies": {
+    "eslint": "7.28.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "5.1.0",
+    "husky": "4.3.8",
+    "jest": "27.0.4",
+    "lint-staged": "11.0.0",
+    "prettier": "2.3.1"
+  },
+  "homepage": "https://github.com/rfcaio/js-brl-currency#readme",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rfcaio/js-brl-currency.git"
+  },
+  "scripts": {
+    "test": "jest --watch"
+  }
+}
