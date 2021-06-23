@@ -5,11 +5,11 @@ describe('toBrl', () => {
     expect(toBrl('')).toEqual('0,00')
   })
 
-  test('autocompletes when an string with one character is passed', () => {
-    expect(toBrl('4')).toEqual('0,04')
+  test('autocompletes when a string with one character is passed', () => {
+    expect(toBrl('1')).toEqual('0,01')
   })
 
-  test('autocompletes when an string with two character is passed', () => {
-    expect(toBrl('47')).toEqual('0,47')
+  test('autocompletes when a string with two characters is passed', () => {
+    expect(toBrl('12')).toEqual('0,12')
   })
 })
