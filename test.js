@@ -8,4 +8,8 @@ describe('toBrl', () => {
   test('autocompletes when an string with one character is passed', () => {
     expect(toBrl('4')).toEqual('0,04')
   })
+
+  test('autocompletes when an string with two character is passed', () => {
+    expect(toBrl('47')).toEqual('0,47')
+  })
 })
