@@ -1,4 +1,10 @@
+const removelNonNumericCharacters = (value) => {
+  return value.replace(/[^0-9]/g, '')
+}
+
 const toBrl = (value) => {
+  value = removelNonNumericCharacters(value)
+
   if (value.length === 0) {
     return '0,00'
   }
