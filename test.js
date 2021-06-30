@@ -28,4 +28,9 @@ describe('toBrl', () => {
     expect(toBrl('a')).toEqual('0,00')
     expect(toBrl('1a')).toEqual('0,01')
   })
+
+  test('removes leading zeros', () => {
+    expect(toBrl('0,001')).toEqual('0,01')
+    expect(toBrl('0,012')).toEqual('0,12')
+  })
 })

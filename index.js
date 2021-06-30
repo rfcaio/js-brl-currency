@@ -1,9 +1,14 @@
+const removeLeadingZeros = (value) => {
+  return value.replace(/^0+/, '')
+}
+
 const removeNonNumericCharacters = (value) => {
   return value.replace(/[^0-9]/g, '')
 }
 
 const toBrl = (value) => {
   value = removeNonNumericCharacters(value)
+  value = removeLeadingZeros(value)
 
   if (value.length === 0) {
     return '0,00'
