@@ -23,9 +23,4 @@ describe('toBrl', () => {
     expect(toBrl('12345678')).toEqual('123.456,78')
     expect(toBrl('123456789')).toEqual('1.234.567,89')
   })
-
-  test('removes non numeric characters', () => {
-    expect(toBrl('a')).toEqual('0,00')
-    expect(toBrl('1a')).toEqual('0,01')
-  })
 })

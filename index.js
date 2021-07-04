@@ -1,8 +1,4 @@
-const { removeLeadingZeros } = require('./utils')
-
-const removeNonNumericCharacters = (value) => {
-  return value.replace(/[^0-9]/g, '')
-}
+const { removeLeadingZeros, removeNonNumericCharacters } = require('./utils')
 
 const toBrl = (value) => {
   value = removeNonNumericCharacters(value)
